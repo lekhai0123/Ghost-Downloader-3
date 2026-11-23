@@ -302,6 +302,10 @@ class FeaturePack:
     def detailCards(self, task: Task, parent: QWidget | None = None) -> list[DetailCard]:
         return []
 
+    def progressPanels(self, task: Task, parent: QWidget | None = None) -> list[QWidget]:
+        """下载窗口中位于速度曲线下方的面板，须提供 refresh()，每秒调用一次。"""
+        return []
+
     def runtimes(self) -> list[BinaryRuntime]:
         return []
 

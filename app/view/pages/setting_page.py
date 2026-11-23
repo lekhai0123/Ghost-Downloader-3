@@ -314,7 +314,7 @@ class SettingPage(QWidget):
         self.taskPopupCard = ComboBoxSettingCard(
             cfg.taskPopupPlace, FluentIcon.SPEED_HIGH, self.tr("新建任务的下载进度"),
             self.tr("选择新建任务下载进度的显示方式"),
-            texts=[self.tr("不显示"), self.tr("通过弹窗显示"), self.tr("显示于任务栏")],
+            texts=[self.tr("不显示"), self.tr("通过弹窗显示"), self.tr("显示于任务栏"), self.tr("打开下载窗口")],
         )
         self.taskPopupCard.setEnabled(cfg.noticeStyle.value == NoticeStyle.POPUP)
 

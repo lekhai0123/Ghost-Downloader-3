@@ -266,3 +266,7 @@ class HttpPack(FeaturePack):
     def editCards(self, task: Task, parent: QWidget | None = None) -> list[OptionCard]:
         return buildEditCards(task, parent)
 
+    def progressPanels(self, task: Task, parent: QWidget | None = None) -> list[QWidget]:
+        from .cards import ConnectionPanel, currentStep
+        return [ConnectionPanel(task, parent)] if currentStep(task) is not None else []
+

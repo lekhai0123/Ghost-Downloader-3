@@ -5,6 +5,7 @@ class SignalBus(QObject):
     activationRequested = Signal()
     exceptionCaught = Signal(str)
     taskPopupRequested = Signal(object)
+    taskWindowRequested = Signal(object)
 
 
 signalBus = SignalBus()

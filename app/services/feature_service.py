@@ -168,6 +168,10 @@ class FeatureService:
         pack = self._packByPackId.get(task.packId)
         return pack.detailCards(task, parent) if pack else []
 
+    def progressPanels(self, task: Task, parent: QWidget | None = None) -> list[QWidget]:
+        pack = self._packByPackId.get(task.packId)
+        return pack.progressPanels(task, parent) if pack else []
+
     # ── RuntimeCard factory ──
 
     def _createRuntimeCard(self, runtime, parent):

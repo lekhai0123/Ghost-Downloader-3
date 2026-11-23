@@ -12,6 +12,7 @@ from qfluentwidgets import (
 
 from app.format import toReadableSize
 from app.models.task import SpecialFileSize, TaskStatus
+from app.signal_bus import signalBus
 from app.platform.desktop_notification import (
     FILE_ICON_SIZE, ICON_SPACING, PADDING, SPACING, TEXT_WIDTH, Popup,
 )
@@ -59,7 +60,9 @@ class TaskPopup(Popup):
             from app.platform.taskbar import setWindowAppId
             setWindowAppId(int(self.winId()), f"{DESKTOP_ID}.{self._task.taskId.replace('_', '-')}")
         self.minimizeButton = self._createHeaderButton(FluentIcon.MINIMIZE)
-        self.headerButtons.insert(0, self.minimizeButton)
+        self.windowButton = self._createHeaderButton(FluentIcon.SPEED_HIGH)
+        self.windowButton.setToolTip(self.tr("打开下载窗口"))
+        self.headerButtons[:0] = [self.windowButton, self.minimizeButton]
 
         self.iconLabel = QLabel(self)
         self.iconLabel.setPixmap(self._toPixmap(
@@ -114,6 +117,7 @@ class TaskPopup(Popup):
     def _bind(self) -> None:
         super()._bind()
         self.minimizeButton.clicked.connect(self._onMinimizeClicked)
+        self.windowButton.clicked.connect(lambda: signalBus.taskWindowRequested.emit(self._task))
         self.toggleButton.clicked.connect(self._onToggleClicked)
         self.cancelButton.clicked.connect(lambda: self._taskService.delete(self._task, shouldDeleteFiles=True))
         self._speedChanged.connect(self.refresh, owner=self)

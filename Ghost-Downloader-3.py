@@ -148,7 +148,19 @@ def startApp(application: Application, primaryInstance: PrimaryInstance, isSilen
         raiseWindow(window)
         return window
 
+    draftWindows = {}  # 没有 parent，窗口靠这份字典活着
+
     def onTaskDraftRequested(tasks, error):
+        if error is None and len(tasks) == 1:
+            task = tasks[0]
+            if (draft := draftWindows.get(task.taskId)) is None:
+                from app.view.windows.draft_window import DraftWindow
+                draft = DraftWindow(task, taskService)
+                draftWindows[task.taskId] = draft
+                draft.destroyed.connect(lambda: draftWindows.pop(task.taskId, None))
+            from app.platform.desktop import raiseWindow
+            raiseWindow(draft)
+            return
         if window is None:
             createWindow().setupPacks()
         window.addTasks(tasks, error)
@@ -302,6 +314,20 @@ def startApp(application: Application, primaryInstance: PrimaryInstance, isSilen
         popup.openOnTaskbar = minimized
         popupStack.add(popup)
 
+    taskWindows = {}  # 没有 parent，窗口靠这份字典活着
+
+    def showTaskWindow(task: Task) -> None:
+        if (window := taskWindows.get(task.taskId)) is None:
+            from app.view.windows.task_window import TaskWindow
+            window = TaskWindow(task, taskService, featureService)
+            taskWindows[task.taskId] = window
+            window.destroyed.connect(lambda: taskWindows.pop(task.taskId, None))
+        window.showNormal()
+        window.raise_()
+        window.activateWindow()
+
+    signalBus.taskWindowRequested.connect(showTaskWindow)
+
     def onTaskAdded(task: Task) -> None:
         candidates.add(task.taskId)
 
@@ -309,6 +335,9 @@ def startApp(application: Application, primaryInstance: PrimaryInstance, isSilen
         if task.taskId not in candidates:
             return
         candidates.discard(task.taskId)
+        if cfg.taskPopupPlace.value == TaskPopupPlace.WINDOW:
+            showTaskWindow(task)
+            return
         if (popupStack is None or cfg.noticeStyle.value != NoticeStyle.POPUP
                 or cfg.taskPopupPlace.value == TaskPopupPlace.OFF):
             return

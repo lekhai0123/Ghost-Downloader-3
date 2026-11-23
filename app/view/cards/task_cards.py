@@ -445,6 +445,10 @@ class TaskCard(CardWidget):
         detail = Action(FluentIcon.INFO, self.tr("任务详情"), self)
         detail.triggered.connect(self._openDrawer)
         menu.addAction(detail)
+        if self._task.status != TaskStatus.COMPLETED:
+            window = Action(FluentIcon.SPEED_HIGH, self.tr("打开下载窗口"), self)
+            window.triggered.connect(lambda: signalBus.taskWindowRequested.emit(self._task))
+            menu.addAction(window)
         if self._task.status == TaskStatus.RUNNING and canShowPopup():
             showProgress = Action(FluentIcon.BACK_TO_WINDOW, self.tr("在单独弹窗中显示下载进度"), self)
             showProgress.triggered.connect(lambda: signalBus.taskPopupRequested.emit(self._task))

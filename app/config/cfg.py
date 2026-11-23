@@ -54,6 +54,7 @@ class TaskPopupPlace(Enum):
     OFF = "Off"
     CORNER = "Corner"
     TASKBAR = "Taskbar"
+    WINDOW = "Window"
 
 
 def canShowPopup() -> bool:

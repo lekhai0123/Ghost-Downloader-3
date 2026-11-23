@@ -3946,6 +3946,10 @@ Ký tự đại diện: *.pcs.baidu.com (khớp tất cả tên miền phụ)</t
   <context>
     <name>SettingPage</name>
     <message>
+      <source>打开下载窗口</source>
+      <translation>Mở cửa sổ tải xuống</translation>
+    </message>
+    <message>
       <location filename="../../view/pages/setting_page.py" line="58"/>
       <source>浏览器扩展</source>
       <translation>Tiện ích trình duyệt</translation>
@@ -4857,6 +4861,10 @@ Dữ liệu sẽ được sao chép sang vị trí mới và ứng dụng sẽ t
   </context>
   <context>
     <name>TaskCard</name>
+    <message>
+      <source>打开下载窗口</source>
+      <translation>Mở cửa sổ tải xuống</translation>
+    </message>
     <message>
       <location filename="../../view/cards/task_cards.py" line="85"/>
       <source>暂停/继续</source>
@@ -5771,6 +5779,10 @@ Cài đặt hệ thống &gt; Quyền riêng tư &amp; Bảo mật &gt; Quyền 
   <context>
     <name>TaskPopup</name>
     <message>
+      <source>打开下载窗口</source>
+      <translation>Mở cửa sổ tải xuống</translation>
+    </message>
+    <message>
       <location filename="../../view/shell/task_popup.py" line="22"/>
       <source>{0} 秒</source>
       <translation>{0} giây</translation>
@@ -6375,6 +6387,226 @@ Nếu muốn nhập thủ công: Mở YouTube và đăng nhập, nhấn F12 mở
       <location filename="../../view/dialogs/task_draft.py" line="46"/>
       <source>添加任务</source>
       <translation>Thêm tác vụ</translation>
+    </message>
+  </context>
+  <context>
+    <name>TaskWindow</name>
+    <message>
+      <source>取消下载</source>
+      <translation>Hủy tải</translation>
+    </message>
+    <message>
+      <source>确定要取消下载这个文件吗？</source>
+      <translation>Bạn có chắc muốn hủy tải tệp này?</translation>
+    </message>
+    <message>
+      <source>继续下载</source>
+      <translation>Tiếp tục tải</translation>
+    </message>
+    <message>
+      <source>同时删除已下载的部分</source>
+      <translation>Xóa luôn phần đã tải</translation>
+    </message>
+    <message>
+      <source>文件大小</source>
+      <translation>Kích thước tệp</translation>
+    </message>
+    <message>
+      <source>已下载</source>
+      <translation>Đã tải</translation>
+    </message>
+    <message>
+      <source>平均速度</source>
+      <translation>Tốc độ trung bình</translation>
+    </message>
+    <message>
+      <source>预计完成于</source>
+      <translation>Dự kiến xong lúc</translation>
+    </message>
+    <message>
+      <source>支持断点续传</source>
+      <translation>Hỗ trợ tải tiếp</translation>
+    </message>
+    <message>
+      <source>保存位置</source>
+      <translation>Lưu tại</translation>
+    </message>
+    <message>
+      <source>隐藏详情</source>
+      <translation>Ẩn chi tiết</translation>
+    </message>
+    <message>
+      <source>显示详情</source>
+      <translation>Hiện chi tiết</translation>
+    </message>
+    <message>
+      <source>打开文件夹</source>
+      <translation>Mở thư mục</translation>
+    </message>
+    <message>
+      <source>复制下载链接</source>
+      <translation>Sao chép liên kết tải</translation>
+    </message>
+    <message>
+      <source>剩余 {0}</source>
+      <translation>Còn lại {0}</translation>
+    </message>
+    <message>
+      <source>正在计算剩余时间</source>
+      <translation>Đang tính thời gian còn lại</translation>
+    </message>
+    <message>
+      <source>未知</source>
+      <translation>Không rõ</translation>
+    </message>
+    <message>
+      <source>是</source>
+      <translation>Có</translation>
+    </message>
+    <message>
+      <source>否</source>
+      <translation>Không</translation>
+    </message>
+    <message>
+      <source>打开文件</source>
+      <translation>Mở tệp</translation>
+    </message>
+    <message>
+      <source>重试</source>
+      <translation>Thử lại</translation>
+    </message>
+    <message>
+      <source>暂停</source>
+      <translation>Tạm dừng</translation>
+    </message>
+    <message>
+      <source>继续</source>
+      <translation>Tiếp tục</translation>
+    </message>
+    <message>
+      <source>正在接收数据</source>
+      <translation>Đang nhận dữ liệu</translation>
+    </message>
+    <message>
+      <source>下载完成</source>
+      <translation>Đã tải xong</translation>
+    </message>
+    <message>
+      <source>下载失败</source>
+      <translation>Tải thất bại</translation>
+    </message>
+    <message>
+      <source>已暂停</source>
+      <translation>Đã tạm dừng</translation>
+    </message>
+    <message>
+      <source>等待中</source>
+      <translation>Đang chờ</translation>
+    </message>
+  </context>
+  <context>
+    <name>SpeedGraph</name>
+    <message>
+      <source>最近 1 分钟</source>
+      <translation>1 phút gần nhất</translation>
+    </message>
+    <message>
+      <source>峰值 {0}/s</source>
+      <translation>Cao nhất {0}/s</translation>
+    </message>
+  </context>
+  <context>
+    <name>ConnectionPanel</name>
+    <message>
+      <source>连接</source>
+      <translation>Kết nối</translation>
+    </message>
+    <message>
+      <source>开始下载后显示各连接的进度</source>
+      <translation>Tiến độ từng kết nối sẽ hiện khi bắt đầu tải</translation>
+    </message>
+    <message>
+      <source>{0} / {1} 个连接正在工作</source>
+      <translation>{0} / {1} kết nối đang hoạt động</translation>
+    </message>
+    <message>
+      <source>共 {0} 个连接</source>
+      <translation>{0} kết nối</translation>
+    </message>
+    <message>
+      <source>已完成</source>
+      <translation>Hoàn tất</translation>
+    </message>
+    <message>
+      <source>已暂停</source>
+      <translation>Đã tạm dừng</translation>
+    </message>
+    <message>
+      <source>正在接收数据</source>
+      <translation>Đang nhận dữ liệu</translation>
+    </message>
+    <message>
+      <source>正在连接</source>
+      <translation>Đang kết nối</translation>
+    </message>
+  </context>
+  <context>
+    <name>DraftWindow</name>
+    <message>
+      <source>新的下载</source>
+      <translation>Tải tệp mới</translation>
+    </message>
+    <message>
+      <source>保存到</source>
+      <translation>Lưu vào</translation>
+    </message>
+    <message>
+      <source>默认</source>
+      <translation>Mặc định</translation>
+    </message>
+    <message>
+      <source>连接数</source>
+      <translation>Số kết nối</translation>
+    </message>
+    <message>
+      <source>取消</source>
+      <translation>Hủy</translation>
+    </message>
+    <message>
+      <source>稍后下载</source>
+      <translation>Tải sau</translation>
+    </message>
+    <message>
+      <source>开始下载</source>
+      <translation>Bắt đầu tải</translation>
+    </message>
+    <message>
+      <source>大小未知</source>
+      <translation>Không rõ kích thước</translation>
+    </message>
+    <message>
+      <source>支持断点续传</source>
+      <translation>Hỗ trợ tải tiếp</translation>
+    </message>
+    <message>
+      <source>不支持断点续传</source>
+      <translation>Không hỗ trợ tải tiếp</translation>
+    </message>
+    <message>
+      <source>复制下载链接</source>
+      <translation>Sao chép liên kết tải</translation>
+    </message>
+    <message>
+      <source>空间不足：需要 {0}，可用 {1}</source>
+      <translation>Không đủ chỗ: cần {0}, còn trống {1}</translation>
+    </message>
+    <message>
+      <source>可用空间 {0}</source>
+      <translation>Còn trống {0}</translation>
+    </message>
+    <message>
+      <source>请选择保存位置</source>
+      <translation>Hãy chọn nơi lưu</translation>
     </message>
   </context>
 </TS>

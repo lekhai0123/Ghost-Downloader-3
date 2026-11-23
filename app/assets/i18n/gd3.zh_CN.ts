@@ -1383,6 +1383,49 @@ http://example.com/{mp4,mkv}/video</source>
     </message>
 </context>
 <context>
+    <name>ConnectionPanel</name>
+    <message>
+        <location filename="../../../features/http_pack/cards.py" line="281"/>
+        <source>连接</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../features/http_pack/cards.py" line="284"/>
+        <source>开始下载后显示各连接的进度</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../features/http_pack/cards.py" line="335"/>
+        <source>{0} / {1} 个连接正在工作</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../features/http_pack/cards.py" line="337"/>
+        <source>共 {0} 个连接</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../features/http_pack/cards.py" line="352"/>
+        <source>已完成</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../features/http_pack/cards.py" line="354"/>
+        <source>已暂停</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../features/http_pack/cards.py" line="356"/>
+        <source>正在接收数据</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../features/http_pack/cards.py" line="358"/>
+        <source>正在连接</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>DecryptionKeyCard</name>
     <message>
         <location filename="../../../features/m3u8_pack/cards.py" line="265"/>
@@ -1430,6 +1473,80 @@ http://example.com/{mp4,mkv}/video</source>
     <message>
         <location filename="../../view/components/card_groups.py" line="118"/>
         <source>{0} 个任务</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>DraftWindow</name>
+    <message>
+        <location filename="../../view/windows/draft_window.py" line="54"/>
+        <location filename="../../view/windows/draft_window.py" line="87"/>
+        <source>新的下载</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/draft_window.py" line="66"/>
+        <source>保存到</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/draft_window.py" line="67"/>
+        <source>默认</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/draft_window.py" line="69"/>
+        <source>连接数</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/draft_window.py" line="74"/>
+        <source>取消</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/draft_window.py" line="75"/>
+        <source>稍后下载</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/draft_window.py" line="76"/>
+        <source>开始下载</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/draft_window.py" line="98"/>
+        <source>大小未知</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/draft_window.py" line="105"/>
+        <source>支持断点续传</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/draft_window.py" line="107"/>
+        <source>不支持断点续传</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/draft_window.py" line="111"/>
+        <source>复制下载链接</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/draft_window.py" line="193"/>
+        <source>空间不足：需要 {0}，可用 {1}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/draft_window.py" line="197"/>
+        <source>可用空间 {0}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/draft_window.py" line="204"/>
+        <source>请选择保存位置</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2324,7 +2441,7 @@ http://example.com/{mp4,mkv}/video</source>
 <context>
     <name>HttpTaskCard</name>
     <message>
-        <location filename="../../../features/http_pack/cards.py" line="123"/>
+        <location filename="../../../features/http_pack/cards.py" line="127"/>
         <source>停止并定案</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3018,7 +3135,7 @@ http://example.com/{mp4,mkv}/video</source>
 <context>
     <name>MultiFileTaskCard</name>
     <message>
-        <location filename="../../view/cards/task_cards.py" line="586"/>
+        <location filename="../../view/cards/task_cards.py" line="590"/>
         <source>{0}/{1} 个文件</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3477,12 +3594,12 @@ http://example.com/{mp4,mkv}/video</source>
 <context>
     <name>Presets</name>
     <message>
-        <location filename="../../config/cfg.py" line="221"/>
+        <location filename="../../config/cfg.py" line="222"/>
         <source>默认</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../config/cfg.py" line="348"/>
+        <location filename="../../config/cfg.py" line="349"/>
         <source>百度网盘客户端</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4362,6 +4479,11 @@ http://example.com/{mp4,mkv}/video</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../view/pages/setting_page.py" line="317"/>
+        <source>打开下载窗口</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../view/pages/setting_page.py" line="322"/>
         <source>命令行工具</source>
         <translation type="unfinished"></translation>
@@ -4700,6 +4822,19 @@ http://example.com/{mp4,mkv}/video</source>
     </message>
 </context>
 <context>
+    <name>SpeedGraph</name>
+    <message>
+        <location filename="../../view/components/glass.py" line="367"/>
+        <source>最近 1 分钟</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/components/glass.py" line="371"/>
+        <source>峰值 {0}/s</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>StreamSelectCard</name>
     <message>
         <location filename="../../../features/m3u8_pack/android.py" line="34"/>
@@ -4915,36 +5050,41 @@ http://example.com/{mp4,mkv}/video</source>
     </message>
     <message>
         <location filename="../../view/cards/task_cards.py" line="449"/>
+        <source>打开下载窗口</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/cards/task_cards.py" line="453"/>
         <source>在单独弹窗中显示下载进度</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/cards/task_cards.py" line="454"/>
+        <location filename="../../view/cards/task_cards.py" line="458"/>
         <source>复制下载链接</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/cards/task_cards.py" line="459"/>
+        <location filename="../../view/cards/task_cards.py" line="463"/>
         <source>编辑任务参数...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/cards/task_cards.py" line="463"/>
+        <location filename="../../view/cards/task_cards.py" line="467"/>
         <source>移到最前</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/cards/task_cards.py" line="467"/>
+        <location filename="../../view/cards/task_cards.py" line="471"/>
         <source>重新下载</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/cards/task_cards.py" line="472"/>
+        <location filename="../../view/cards/task_cards.py" line="476"/>
         <source>移动到分类</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/cards/task_cards.py" line="474"/>
+        <location filename="../../view/cards/task_cards.py" line="478"/>
         <source>未分类</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5736,77 +5876,82 @@ http://example.com/{mp4,mkv}/video</source>
 <context>
     <name>TaskPopup</name>
     <message>
-        <location filename="../../view/shell/task_popup.py" line="22"/>
+        <location filename="../../view/shell/task_popup.py" line="23"/>
         <source>{0} 秒</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/shell/task_popup.py" line="26"/>
+        <location filename="../../view/shell/task_popup.py" line="27"/>
         <source>{0} 分 {1} 秒</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/shell/task_popup.py" line="27"/>
+        <location filename="../../view/shell/task_popup.py" line="28"/>
         <source>{0} 分</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/shell/task_popup.py" line="30"/>
+        <location filename="../../view/shell/task_popup.py" line="31"/>
         <source>{0} 小时 {1} 分</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/shell/task_popup.py" line="31"/>
+        <location filename="../../view/shell/task_popup.py" line="32"/>
         <source>{0} 小时</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/shell/task_popup.py" line="80"/>
+        <location filename="../../view/shell/task_popup.py" line="64"/>
+        <source>打开下载窗口</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/shell/task_popup.py" line="83"/>
         <source>取消</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/shell/task_popup.py" line="128"/>
+        <location filename="../../view/shell/task_popup.py" line="132"/>
         <source>速度 {0}/s，剩余 {1}</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/shell/task_popup.py" line="131"/>
+        <location filename="../../view/shell/task_popup.py" line="135"/>
         <source>速度 {0}/s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/shell/task_popup.py" line="133"/>
+        <location filename="../../view/shell/task_popup.py" line="137"/>
         <source>正在计算速度</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/shell/task_popup.py" line="135"/>
+        <location filename="../../view/shell/task_popup.py" line="139"/>
         <source>任务已经暂停</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/shell/task_popup.py" line="137"/>
+        <location filename="../../view/shell/task_popup.py" line="141"/>
         <source>任务正在等待</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/shell/task_popup.py" line="139"/>
+        <location filename="../../view/shell/task_popup.py" line="143"/>
         <source>已下载 {0}，共 {1}</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/shell/task_popup.py" line="142"/>
+        <location filename="../../view/shell/task_popup.py" line="146"/>
         <source>已下载 {0}</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/shell/task_popup.py" line="151"/>
+        <location filename="../../view/shell/task_popup.py" line="155"/>
         <source>继续</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../view/shell/task_popup.py" line="151"/>
+        <location filename="../../view/shell/task_popup.py" line="155"/>
         <source>暂停</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5852,6 +5997,152 @@ http://example.com/{mp4,mkv}/video</source>
     <message>
         <location filename="../../../features/m3u8_pack/android.py" line="67"/>
         <source>录制中</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TaskWindow</name>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="78"/>
+        <source>文件大小</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="79"/>
+        <source>已下载</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="80"/>
+        <source>平均速度</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="81"/>
+        <source>预计完成于</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="82"/>
+        <source>支持断点续传</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="83"/>
+        <source>保存位置</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="90"/>
+        <location filename="../../view/windows/task_window.py" line="327"/>
+        <source>隐藏详情</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="91"/>
+        <location filename="../../view/windows/task_window.py" line="333"/>
+        <location filename="../../view/windows/task_window.py" line="335"/>
+        <source>取消下载</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="92"/>
+        <source>打开文件夹</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="118"/>
+        <source>复制下载链接</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="228"/>
+        <source>剩余 {0}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="231"/>
+        <source>正在计算剩余时间</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="241"/>
+        <source>未知</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="246"/>
+        <source>是</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="246"/>
+        <source>否</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="252"/>
+        <source>打开文件</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="256"/>
+        <source>重试</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="260"/>
+        <source>暂停</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="264"/>
+        <source>继续</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="289"/>
+        <source>正在接收数据</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="291"/>
+        <source>下载完成</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="293"/>
+        <source>下载失败</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="295"/>
+        <source>已暂停</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="296"/>
+        <source>等待中</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="327"/>
+        <source>显示详情</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="333"/>
+        <source>确定要取消下载这个文件吗？</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="336"/>
+        <source>继续下载</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../view/windows/task_window.py" line="338"/>
+        <source>同时删除已下载的部分</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

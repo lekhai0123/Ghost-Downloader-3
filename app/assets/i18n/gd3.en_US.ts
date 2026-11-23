@@ -3947,6 +3947,10 @@ Wildcard: *.pcs.baidu.com (matches all subdomains)</translation>
   <context>
     <name>SettingPage</name>
     <message>
+      <source>打开下载窗口</source>
+      <translation>Open download window</translation>
+    </message>
+    <message>
       <location filename="../../view/pages/setting_page.py" line="58"/>
       <source>浏览器扩展</source>
       <translation>Browser Extension</translation>
@@ -4858,6 +4862,10 @@ Data will be copied to new location and the app will then exit. Please manually 
   </context>
   <context>
     <name>TaskCard</name>
+    <message>
+      <source>打开下载窗口</source>
+      <translation>Open download window</translation>
+    </message>
     <message>
       <location filename="../../view/cards/task_cards.py" line="85"/>
       <source>暂停/继续</source>
@@ -5772,6 +5780,10 @@ System Settings &gt; Privacy &amp; Security &gt; Full Disk Access</translation>
   <context>
     <name>TaskPopup</name>
     <message>
+      <source>打开下载窗口</source>
+      <translation>Open download window</translation>
+    </message>
+    <message>
       <location filename="../../view/shell/task_popup.py" line="22"/>
       <source>{0} 秒</source>
       <translation>{0} s</translation>
@@ -6376,6 +6388,226 @@ For manual import: Open YouTube and log in, press F12 to open Developer Tools, g
       <location filename="../../view/dialogs/task_draft.py" line="46"/>
       <source>添加任务</source>
       <translation>Add Task</translation>
+    </message>
+  </context>
+  <context>
+    <name>TaskWindow</name>
+    <message>
+      <source>取消下载</source>
+      <translation>Cancel download</translation>
+    </message>
+    <message>
+      <source>确定要取消下载这个文件吗？</source>
+      <translation>Cancel downloading this file?</translation>
+    </message>
+    <message>
+      <source>继续下载</source>
+      <translation>Keep downloading</translation>
+    </message>
+    <message>
+      <source>同时删除已下载的部分</source>
+      <translation>Also delete the downloaded part</translation>
+    </message>
+    <message>
+      <source>文件大小</source>
+      <translation>File size</translation>
+    </message>
+    <message>
+      <source>已下载</source>
+      <translation>Downloaded</translation>
+    </message>
+    <message>
+      <source>平均速度</source>
+      <translation>Average speed</translation>
+    </message>
+    <message>
+      <source>预计完成于</source>
+      <translation>Expected to finish</translation>
+    </message>
+    <message>
+      <source>支持断点续传</source>
+      <translation>Resumable</translation>
+    </message>
+    <message>
+      <source>保存位置</source>
+      <translation>Saved to</translation>
+    </message>
+    <message>
+      <source>隐藏详情</source>
+      <translation>Hide details</translation>
+    </message>
+    <message>
+      <source>显示详情</source>
+      <translation>Show details</translation>
+    </message>
+    <message>
+      <source>打开文件夹</source>
+      <translation>Open folder</translation>
+    </message>
+    <message>
+      <source>复制下载链接</source>
+      <translation>Copy download link</translation>
+    </message>
+    <message>
+      <source>剩余 {0}</source>
+      <translation>{0} left</translation>
+    </message>
+    <message>
+      <source>正在计算剩余时间</source>
+      <translation>Calculating time left</translation>
+    </message>
+    <message>
+      <source>未知</source>
+      <translation>Unknown</translation>
+    </message>
+    <message>
+      <source>是</source>
+      <translation>Yes</translation>
+    </message>
+    <message>
+      <source>否</source>
+      <translation>No</translation>
+    </message>
+    <message>
+      <source>打开文件</source>
+      <translation>Open file</translation>
+    </message>
+    <message>
+      <source>重试</source>
+      <translation>Retry</translation>
+    </message>
+    <message>
+      <source>暂停</source>
+      <translation>Pause</translation>
+    </message>
+    <message>
+      <source>继续</source>
+      <translation>Resume</translation>
+    </message>
+    <message>
+      <source>正在接收数据</source>
+      <translation>Receiving data</translation>
+    </message>
+    <message>
+      <source>下载完成</source>
+      <translation>Completed</translation>
+    </message>
+    <message>
+      <source>下载失败</source>
+      <translation>Failed</translation>
+    </message>
+    <message>
+      <source>已暂停</source>
+      <translation>Paused</translation>
+    </message>
+    <message>
+      <source>等待中</source>
+      <translation>Waiting</translation>
+    </message>
+  </context>
+  <context>
+    <name>SpeedGraph</name>
+    <message>
+      <source>最近 1 分钟</source>
+      <translation>Last minute</translation>
+    </message>
+    <message>
+      <source>峰值 {0}/s</source>
+      <translation>Peak {0}/s</translation>
+    </message>
+  </context>
+  <context>
+    <name>ConnectionPanel</name>
+    <message>
+      <source>连接</source>
+      <translation>Connections</translation>
+    </message>
+    <message>
+      <source>开始下载后显示各连接的进度</source>
+      <translation>Each connection's progress appears once the download starts</translation>
+    </message>
+    <message>
+      <source>{0} / {1} 个连接正在工作</source>
+      <translation>{0} / {1} connections active</translation>
+    </message>
+    <message>
+      <source>共 {0} 个连接</source>
+      <translation>{0} connections</translation>
+    </message>
+    <message>
+      <source>已完成</source>
+      <translation>Done</translation>
+    </message>
+    <message>
+      <source>已暂停</source>
+      <translation>Paused</translation>
+    </message>
+    <message>
+      <source>正在接收数据</source>
+      <translation>Receiving data</translation>
+    </message>
+    <message>
+      <source>正在连接</source>
+      <translation>Connecting</translation>
+    </message>
+  </context>
+  <context>
+    <name>DraftWindow</name>
+    <message>
+      <source>新的下载</source>
+      <translation>New download</translation>
+    </message>
+    <message>
+      <source>保存到</source>
+      <translation>Save to</translation>
+    </message>
+    <message>
+      <source>默认</source>
+      <translation>Default</translation>
+    </message>
+    <message>
+      <source>连接数</source>
+      <translation>Connections</translation>
+    </message>
+    <message>
+      <source>取消</source>
+      <translation>Cancel</translation>
+    </message>
+    <message>
+      <source>稍后下载</source>
+      <translation>Download later</translation>
+    </message>
+    <message>
+      <source>开始下载</source>
+      <translation>Start download</translation>
+    </message>
+    <message>
+      <source>大小未知</source>
+      <translation>Unknown size</translation>
+    </message>
+    <message>
+      <source>支持断点续传</source>
+      <translation>Resumable</translation>
+    </message>
+    <message>
+      <source>不支持断点续传</source>
+      <translation>Not resumable</translation>
+    </message>
+    <message>
+      <source>复制下载链接</source>
+      <translation>Copy download link</translation>
+    </message>
+    <message>
+      <source>空间不足：需要 {0}，可用 {1}</source>
+      <translation>Not enough space: needs {0}, {1} free</translation>
+    </message>
+    <message>
+      <source>可用空间 {0}</source>
+      <translation>{0} free</translation>
+    </message>
+    <message>
+      <source>请选择保存位置</source>
+      <translation>Choose where to save</translation>
     </message>
   </context>
 </TS>
